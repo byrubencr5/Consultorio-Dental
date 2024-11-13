@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*medidas
+vh para alturas
+vw para anchura*/
+
+
+/*Variables*/
+:root{
+    --color-blanco: #eff3ff;
+    --color-azul: #6989f9;
+    --fuente: "Public Sans", sans-serif;
+}
+
+/*Cuerpo principal, fondo y tipo de letra*/
+body{
+    background-color: var(--color-blanco);
+    font-family: var(--fuente);
+}
+
+/*Contenedor padre de los divs*/
+.container-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6vh;
+}
+
+/*Logo vila salud*/
+.logo-clinica{
+    width: 28vw;
+    height: auto;
+    margin-left: 5vw;
+}
+
+/*Div izquierdo que contiene el formulario de inicio de sesion*/
+.izquierda{
+    margin-left: 6rem;
+}
+
+/*Estilos para el apartado del formulario*/
+.formulario{
+    padding: 3rem;
+    padding-bottom: 5rem;
+    border-radius: 10px;
+    background-color: var(--color-azul);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 8vh;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
+    height: 35vh;
+}
+
+/*Estilos para los divs que contienen los label y inputs, usuario y contraseña*/
+.campo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;  /* Espacio entre el label y el input */
+}
+
+/*Estilos para los labels dentro del formulario*/
+.campo label{
+    color: var(--color-blanco);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*Estilos para los inputs dentro del formulario*/
+.campo input{
+    font-family: var(--fuente);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-azul);
+    background-color: var(--color-blanco);
+    width: 15vw;
+    height: 4vh;
+    border-radius: 10px;
+    border-color: var(--color-blanco);
+    padding: 10px;
+}
+
+/*Estilos para el input de usuario*/
+#usuario{
+    margin-left: 5.5vw;
+}
+
+/*Estilo para botones*/
+button{
+    width: 12vw;
+    height: 15vh;
+    border-radius: 10px;
+    border-color: var(--color-blanco);
+    color: var(--color-azul);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 4vh;
+}
+
+/*Estilo para el div de los botones*/
+.botones{
+    display: flex;
+    gap: 6rem;
+}
+
+/*Div derecho que contiene la imagen del dentista*/
+.derecha{
+    margin-right: 6rem;
+}    
+
+/*Estilos de la imagen dentista*/
+.imagen-dentista{
+    width: 38vw;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.7);
+    margin-top: 6vh;
+}
+
+footer{
+    margin-bottom: 3vh;
+    color: var(--color-azul);
+    font-size: 1.5rem;
+    text-align: center;
+}
